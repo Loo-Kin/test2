@@ -1,0 +1,49 @@
+.menu_panel{
+    padding: 15px 0;
+    background-color: white;
+    box-shadow: skyblue 0 0 15px inset;
+    clear: both;
+    position: relative;
+    height: 20px;
+
+    & ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    & ul li {
+        display: inline-block;
+        margin: 0 8px;
+    }
+
+    & ul li#currentSection {
+        border-bottom: solid skyblue 4px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .menu_panel ul {
+        & ul {
+            position: absolute;
+            right: 0;
+            top: 100%;
+            width: 100%;
+            display: none;
+            z-index: 100;
+        }
+
+        & ul li {
+            display: list-item;
+            list-style: none;
+            background-color: white;
+            box-shadow: skyblue 0 0 15px inset;
+            padding: 8px;
+        }
+        
+        & ul li#currentSection {
+            border-left: solid skyblue 8px;
+            border-bottom: 0;
+        }
+    }
+}

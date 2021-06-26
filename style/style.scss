@@ -1,0 +1,83 @@
+@import 'vars';
+@import 'accordion';
+@import 'topmenu';
+
+body {
+    background-color: $lightblue;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    &:link, &:visited {
+        text-decoration:none;
+        color: cadetblue;
+    }
+
+    &:hover {
+        color: midnightblue;
+    }
+}
+
+.main-wrapper {
+    width: 1300px;
+    margin: 0px auto;
+    clear: both;
+}
+
+.container {
+    background-color: white;
+    margin: 8px;
+    padding: 15px;
+    box-shadow: $lightblue 0 0 15px inset;
+    position: relative;
+}
+
+.tree-list__item {
+    background-color: white;
+    border: solid 1px lightblue;
+    margin: 10px;
+    padding: 4px 4px 4px 8px;
+}
+
+/* forms */
+.textbox {
+    border: none;
+    border: ridge 1px paleturquoise;
+    border-radius: 4px;
+    padding: 4px;
+    right: 10px;
+    width: 60%;
+}
+
+.error {
+    color: $red;
+    margin-left: 20px;
+}
+
+.button {
+    display: inline;
+    padding: 10px;
+    padding-bottom: 14px;
+    background-color: $white;
+    box-shadow: $lightblue 0 0 15px inset;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1320px) {
+    .main-wrapper {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .triplecolumns_wrapper {
+        width: 100%;
+        float: none;
+    }
+
+    .main-wrapper {
+        width: 100%;
+    }
+}
